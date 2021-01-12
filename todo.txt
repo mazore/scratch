@@ -1,0 +1,20 @@
+TODO:
+- add ability to show variable on canvas
+
+- don't remove (un-held) get blocks no refresh var blocks
+- implement color in inspector
+- shaped fields
+- snap indicators
+- dropdowns
+- place loops around block section
+- make widgets scale with window
+- panning on coding area
+- add images to inspector
+
+
+block ideas
+    action - stop script, set sprite w and h, set background color, set sprite color, set sprite rotation
+    control - else, while, repeat _ times
+    event - on key pressed, on sprite clicked
+    operator - round, power, (abs, sin, log, ceil, etc.), ternary, join, length, substring, constrain, distance
+    variable - list stuff
