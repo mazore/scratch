@@ -98,7 +98,7 @@ class Root(tk.Tk):
         self.running = False
 
     def save(self):
-        initial_file = 'D:\Documents\Pycharm\Scratch\saves' if self.filename is None else self.filename
+        initial_file = 'saves' if self.filename is None else self.filename
         filename = filedialog.asksaveasfilename(initialfile=initial_file)
         if filename == '':  # cancel
             return
@@ -117,7 +117,7 @@ class Root(tk.Tk):
         }
 
     def load(self):
-        file = filedialog.askopenfile(initialdir='D:\Documents\Pycharm\Scratch\saves')
+        file = filedialog.askopenfile(initialdir='saves')
         self.filename = file.name
         if file is None:  # cancel
             return
