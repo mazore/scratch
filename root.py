@@ -98,7 +98,7 @@ class Root(tk.Tk):
         self.running = False
 
     def save(self):
-        initial_file = 'saves' if self.filename is None else self.filename
+        initial_file = os.path.dirname(__file__) + '/saves' if self.filename is None else self.filename
         filename = filedialog.asksaveasfilename(initialfile=initial_file)
         if filename == '':  # cancel
             return
@@ -117,10 +117,10 @@ class Root(tk.Tk):
         }
 
     def load(self):
-        file = filedialog.askopenfile(initialdir='saves')
-        self.filename = file.name
+        file = filedialog.askopenfile(initialdir=os.path.dirname(__file__) + '/saves')
         if file is None:  # cancel
             return
+        self.filename = file.name
 
         self.d = json.load(file)
         self.sprite_manager.load(self.d['sprite_manager'])

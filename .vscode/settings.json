@@ -1,0 +1,5 @@
+{
+    "command-runner.commands": {
+        "run": "python main.py"
+    }
+}

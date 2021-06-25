@@ -10,7 +10,7 @@ class CodingArea(tk.Canvas):
         self.root = root
 
         super().__init__(root, bd=1, bg='white', relief='solid')
-        self.place(x=35, y=10, width=CODING_AREA_WIDTH, height=CODING_AREA_HEIGHT)
+        self.place(x=40, y=10, width=CODING_AREA_WIDTH, height=CODING_AREA_HEIGHT)
 
         # Separator
         f = tk.Frame(width=CODING_AREA_WIDTH, highlightbackground='black', highlightthickness=1)
